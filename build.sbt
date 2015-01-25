@@ -10,7 +10,7 @@ lazy val root = (project in file(".")).
   settings(commonSettings: _*).
   settings(SbtStartScript.startScriptForClassesSettings: _*).
   settings(
-    name := "scalatra-servlet",
+    name := "shlist-rest",
     libraryDependencies ++= Seq(
         "org.scalatra" %% "scalatra" % "2.3.0",
         "org.scalatra" %% "scalatra-json" % "2.3.0",
