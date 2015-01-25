@@ -17,6 +17,7 @@ lazy val root = (project in file(".")).
         "org.json4s" %% "json4s-native" % "3.2.11",
         "org.eclipse.jetty" % "jetty-webapp" % "9.2.6.v20141205",
         "javax.servlet" % "javax.servlet-api" % "3.1.0" % "provided",
-        "ch.qos.logback" % "logback-classic" % "1.0.13"
+        "ch.qos.logback" % "logback-classic" % "1.0.13",
+        "com.typesafe" % "config" % "1.2.1"
     )
   )
