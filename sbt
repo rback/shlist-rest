@@ -16,5 +16,5 @@ function enable_debug_if_needed() {
 load_personal_configs
 enable_debug_if_needed
 
-export SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
-exec java -XX:MaxPermSize=256M -Xmx512M ${DEBUG_OPTS} -jar project/sbt-launch.jar "$@"
+export SBT_OPTS="-XX:+CMSClassUnloadingEnabled"
+exec java ${DEBUG_OPTS} -jar project/sbt-launch.jar "$@"
