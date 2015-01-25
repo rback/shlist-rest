@@ -1,4 +1,4 @@
-package example
+package servlets
 
 class HealthCheckServlet extends RestServlet {
   get("""^(/|/health-check)$""".r) {

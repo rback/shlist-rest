@@ -1,4 +1,4 @@
-import example.HealthCheckServlet
+import servlets.HealthCheckServlet
 import org.scalatra._
 import javax.servlet.ServletContext
 import org.slf4j.LoggerFactory

@@ -1,4 +1,4 @@
-package example
+package servlets
 
 import org.scalatra.ScalatraServlet
 
