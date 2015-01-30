@@ -1,7 +1,9 @@
 lazy val commonSettings = Seq(
   organization := "com.github.rback",
   version := System.getProperty("releaseVersion", "trunk-SNAPSHOT"),
-  scalaVersion := "2.11.5"
+  scalaVersion := "2.11.5",
+  herokuAppName in Compile := "shlist",
+  herokuJdkVersion in Compile := "1.8"
 )
 
 lazy val root = (project in file(".")).
