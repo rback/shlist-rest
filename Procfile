@@ -1,1 +1,1 @@
-web: target/start ${JAVA_OPTS}
+web: target/universal/stage/bin/shlist-rest ${JAVA_OPTS}

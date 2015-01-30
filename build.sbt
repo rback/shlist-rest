@@ -1,4 +1,4 @@
-import com.typesafe.sbt.SbtStartScript
+packageArchetype.java_application
 
 lazy val commonSettings = Seq(
   organization := "com.github.rback",
@@ -8,7 +8,6 @@ lazy val commonSettings = Seq(
 
 lazy val root = (project in file(".")).
   settings(commonSettings: _*).
-  settings(SbtStartScript.startScriptForClassesSettings: _*).
   settings(
     name := "shlist-rest",
     libraryDependencies ++= Seq(
