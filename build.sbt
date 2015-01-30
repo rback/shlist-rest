@@ -1,5 +1,3 @@
-packageArchetype.java_application
-
 lazy val commonSettings = Seq(
   organization := "com.github.rback",
   version := System.getProperty("releaseVersion", "trunk-SNAPSHOT"),
@@ -8,6 +6,7 @@ lazy val commonSettings = Seq(
 
 lazy val root = (project in file(".")).
   settings(commonSettings: _*).
+  settings(packageArchetype.java_application: _*).
   settings(
     name := "shlist-rest",
     libraryDependencies ++= Seq(
