@@ -1,3 +1,5 @@
+import com.typesafe.sbt.SbtNativePackager.packageArchetype
+
 lazy val commonSettings = Seq(
   organization := "com.github.rback",
   version := System.getProperty("releaseVersion", "trunk-SNAPSHOT"),
